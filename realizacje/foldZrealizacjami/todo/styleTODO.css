@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+}
+
+.todo-cnt {
+    max-width:60rem;
+    margin:0 auto;
+}
+.todo-form {
+    font-family:sans-serif;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    padding:1rem;
+    background: #fff;
+}
+.todo-form-row {
+    overflow:hidden;
+}
+.todo-form-label {
+    display: block;
+    font-size:0.8rem;
+    margin-bottom:0.2rem;
+}
+.todo-form-message {
+    padding:1rem;
+    height:10rem;
+    width:100%;
+    border:1px solid #ddd;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+    font-family:sans-serif;
+}
+.todo-form-button {
+    padding:0.8rem 1.6rem;
+    background: #F15C5C;
+    color:#fff;
+    border:0;
+    border-radius: 0.188rem;
+    transition:0.4s all;
+    cursor: pointer;
+    float: right;
+}
+.todo-form-button:hover {
+    background: #ED2D2D;
+}
+#todoMessage {
+    color: #fafafa;
+    text-shadow: 2px 4px 5px #000 !important;
+    font-weight: 600;
+    font-size: xx-large;
+    background: rgb(0,0,0,.6);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    -ms-transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+#todoMessage:focus {
+    background: red;
+    color: #fafafa;
+    text-shadow: 2px 4px 5px #000 !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+todo-list {
+   transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+    -ms-transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.todo-list-cnt {
+    background: #fff;
+    font-family:sans-serif;
+    margin:1rem 0;
+    border:1px solid #ddd;
+    padding:1rem 2rem;
+}
+.todo-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-list-search-form {
+    width:50%;
+}
+.todo-list-search {
+    border:1px solid #ddd;
+    padding:0.5rem;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.todo-list-title {
+    margin-top:0;
+    margin-bottom:0;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.todo-element {
+    border-top:1px solid #ddd;
+    margin-top:1rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+.todo-element-bar {
+    overflow:hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0.75rem;
+}
+.todo-element-date {
+    margin:0;
+}
+.todo-element-date {
+    font-size:0.9rem;
+    font-weight: normal;
+}
+.todo-element-delete {
+    color:#F15C5C;
+    border:0;
+    font-size:1rem;
+    background: none;
+    cursor: pointer;
+    padding:0;
+    transition:0.4s all;
+}
+.todo-element-delete svg {
+    pointer-events: none; /* nie chcemy obsługi kliknięć na elementy svg - bo takie dodaje użyty fontAwesome */
+}
+.todo-element-delete:hover {
+    color: #ED2D2D;
+}
+.todo-element-text {
+    color: #000;
+    font-weight: 600;
+    font-size: x-large;
+    text-shadow: 2px 2px 2px #777;
+}
