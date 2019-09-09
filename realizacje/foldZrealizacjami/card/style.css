@@ -1,0 +1,213 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, sans-serif;
+  }
+
+  .main{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .main div{
+    width:300px;
+    height: 100px;
+    background:#eaeaea;
+    padding:8px;
+    border-radius:2px;
+    position:relative;
+    margin-bottom:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  .main div span.copy{
+    height:17px;
+    /*display:block;*/
+    display: none;
+    max-width:204px;
+    overflow:hidden;
+    white-space:nowrap;
+        -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+    word-wrap:break-word;
+    position:relative;
+    top:-1px;
+  }
+
+  .main div span.copy::before{
+    content:'';
+    position:absolute;
+    height:100%;
+    width:30px;
+    top:0;
+    right:-1px;
+
+
+  background: -moz-linear-gradient(left, rgba(234,234,234,0) 0%, rgba(234,234,234,0.01) 1%, rgba(234,234,234,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(234,234,234,0) 0%,rgba(234,234,234,0.01) 1%,rgba(234,234,234,1) 100%);
+  background: linear-gradient(to right, rgba(234,234,234,0) 0%,rgba(234,234,234,0.01) 1%,rgba(234,234,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eaeaea', endColorstr='#eaeaea',GradientType=1 );
+  }
+
+  .main div button{
+    position:absolute;
+    height:100%;
+    /*width:95px;*/
+    width: 100%;
+    right:0;
+    top:0;
+    background:#0896ff;
+    border:none;
+    outline:none;
+    border-radius:3px;
+    color:#fff;
+    text-shadow: 2px 2px 1px #000;
+    cursor:pointer;
+    font-size: 19px;
+
+  }
+
+  .main div button:active{
+    background:#003580;
+    transform: scale(0.9);
+  }
+
+  .icon-copy{
+    font-size:11px;
+    position:relative;
+    top:-1px;
+    margin-right:2px;
+  }
+
+  .confirmation{
+    background:#feba01;
+    color:#383838;
+    padding:10px 15px;
+    border-radius:3px;
+    display:none;
+    position:fixed;
+    bottom:20px;
+    left:20px;
+  }
+  #ukryj {
+    display: none;
+  }
+.colo1 {
+   background:#C13 !important;
+  border: 2px solid black   !important;
+       }
+
+.colo2 {
+   background:#533A4B !important;
+       }
+
+.colo3 {
+   background:#FFD33C  !important;
+       }
+
+.colo4 {
+   background:#789   !important;
+       }
+.colo5 {
+   background:#486D87   !important;
+       }
+
+.colo6 {
+   background:#D979BD   !important;
+       }
+.colo7 {
+   background:#3483CA   !important;
+       }
+
+.colo8 {
+   background:#e43b2afa   !important;
+       }
+
+.colo9 {
+   background:#756a69fa   !important;
+       }
+
+.colo10 {
+   background:#a5d8d1   !important;
+       }
+
+.colo11 {
+   background:#efb051c9   !important;
+       }
+
+.colo12 {
+   background:#789DB1   !important;
+   border: 2px solid black   !important;
+       }
+
+.colo13 {
+   background:#ab0404fa   !important;
+   
+       }
+.colo14 {
+   background:#1d3e56   !important;
+   
+       }
+
+.colo15 {
+   background:#7d7d7d   !important;
+   
+       }
+
+.colo16 {
+   background:#074482   !important;
+   
+       }
+
+.colo17 {
+   background:#19d24a   !important;
+   border: 2px solid black   !important;
+       }
+.colo18 {
+    background: #3a454c !important;
+    border: 5px dashed white !important; 
+        }
+
+.nav-item-container {
+  position: fixed !important;
+  top: 50% !important;
+  right: 0% !important;
+  transform: translateY(-50%);
+  margin-right: 10px !important;
+  background: #1c2517cf !important;
+  border-radius: 10px;
+  width: 60px !important;
+  height: 80vh !important;
+  z-index: 9998 !important;
+  color: white;
+  display: grid;
+  align-items: center;
+  box-shadow: 2px 2px 10px 1px #474e43;
+}
+.nav-item-container .nav-item {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.3s all ease;
+  border: 1px solid transparent;
+
+
+}
+.nav-item-container .nav-item:hover {
+  border: 1px solid white;
+}
