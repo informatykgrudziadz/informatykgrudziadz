@@ -47,6 +47,19 @@ loader.style.display = 'none';
 });
 /**koniec dodawania loadera */
 
+/**ukrywanie toTop start*/
+let toTop = document.querySelector('.toTop');
+window.addEventListener('scroll', function () {
+  if (!window.scrollY) {
+    toTop.style.opacity = '0';
+    toTop.style.left = '-30px';
+  } else {
+    toTop.style.opacity = '1';
+    toTop.style.left = '30px';
+
+  }
+});
+/**koniec ukrywanie toTop*/
 /**skrócony kod o 107 linijek JS dodać w domu do github uwaga kodowanie tylko app oraz dodana klasa do index html */
 
 

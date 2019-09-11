@@ -24,6 +24,12 @@ nav {
   left: 30px;
   bottom: 60px;
   z-index: 19;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
 }
 .toTop a {
   color: inherit;
@@ -32,13 +38,15 @@ nav {
 .toTop a .fas {
   font-size: xx-large;
   color: #403d3d;
+  color: #f3f1f1;
   
 }
+
 
 .logo {
   color: black;
   /*text-shadow: 0px 0px 2px teal;*/
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   font-size: small;
   position: relative;
   display: flex;
@@ -506,7 +514,7 @@ font-family: 'Audiowide', cursive;
 }
 
 .grid-container div:nth-child(5) {
-  background-image: url('img/SekcjeRealizacje/rain-3915684_1920.jpg');
+  background-image: url('img/modalImg/SekcjeRealizacje/rain-3915684_1920.jpg');
 }
 
 .grid-container div:nth-child(5)::after {
@@ -538,7 +546,7 @@ font-family: 'Audiowide', cursive;
   align-items: center;
 }
 
-#arrowContact {
+.arrowContact {
   position: absolute;
   top: 80%;
   width: 100%;
@@ -552,7 +560,7 @@ font-family: 'Audiowide', cursive;
 }
   /*wklejane start*/
   /*
-  #home #arrowContact,#prog #arrowContact,#price #arrowContact, #proj #arrowContact {
+  #home .arrowContact,#prog .arrowContact,#price .arrowContact, #proj .arrowContact {
   
   position: absolute;
   top: 80%;
@@ -564,12 +572,12 @@ font-family: 'Audiowide', cursive;
   -webkit-animation: arrowlike 2s infinite ease;
   }
   */
-  #home #arrowContact a , #prog #arrowContact a , #price #arrowContact a , #proj #arrowContact a  {
+  #home .arrowContact a , #prog .arrowContact a , #price .arrowContact a , #proj .arrowContact a  {
     /*background: rgb(255, 255, 255);*/
     padding: 20px 15px;
     z-index: 20 !important;
   }
-  #home #arrowContact a .far, #prog #arrowContact a .far, #price #arrowContact a .far, #proj #arrowContact a .far,#contact #arrowContact .far {
+  #home .arrowContact a .far, #prog .arrowContact a .far, #price .arrowContact a .far, #proj .arrowContact a .far,#contact .arrowContact .far {
     text-align: center;
     text-decoration: none;
     color: white;
@@ -577,12 +585,12 @@ font-family: 'Audiowide', cursive;
   }	
   /*wklejane koniec*/
   
-  #arrowContact .far {
+  .arrowContact .far {
         font-size: xx-large;
         padding: 0.2em 1.5em;
         text-align:center;
   }
-  #contact #arrowContact {
+  #contact .arrowContact {
     display: none;
   }
 
@@ -1053,11 +1061,11 @@ font-size: 0.8em;
       -o-transition: 0.24s background-color ease-out;
 }
 
-#contact #arrowContact {
+#contact .arrowContact {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#arrowContact {
+.arrowContact {
   position: absolute;
   top: 80%;
   width: 100%;
@@ -1066,14 +1074,14 @@ font-size: 0.8em;
   -webkit-animation: arrowlike 2.5s infinite linear both;
 }
 
-#home #arrowContact,#prog #arrowContact,#price #arrowContact, #proj #arrowContact { position: absolute; top: 80%; width: 100%; animation: arrowlike 2.5s infinite linear both; /*display: flex; *//*grid-template-columns: 1fr; */justify-content: center; align-items: center; -webkit-animation: arrowlike 2.5s infinite linear both;
+#home .arrowContact,#prog .arrowContact,#price .arrowContact, #proj .arrowContact { position: absolute; top: 80%; width: 100%; animation: arrowlike 2.5s infinite linear both; /*display: flex; *//*grid-template-columns: 1fr; */justify-content: center; align-items: center; -webkit-animation: arrowlike 2.5s infinite linear both;
 }
-#home #arrowContact a .far, #prog #arrowContact a .far, #price #arrowContact a .far, #proj #arrowContact a .far {
+#home .arrowContact a .far, #prog .arrowContact a .far, #price .arrowContact a .far, #proj .arrowContact a .far {
 
 text-decoration: none;
 }	
 
-#arrowContact .far {
+.arrowContact .far {
       font-size: xx-large;
       padding: 0.2em 1em;
       text-align:center;
